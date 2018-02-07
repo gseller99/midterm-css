@@ -1,0 +1,42 @@
+<!-- Flexbox
+Create an HTML page that has a container. This container should be as tall as the viewable page and as wide as the viewable page. Inside this container should be 8 squares of 100x100px. The squares should each contain a number from 1 to 8. In the typed HTML/code, each square should be typed in from 1 to 8. When the squares are rendered on the page they should render from top to bottom and from 8 counting backwards to 1. There should be an equal amount of space between the squares and also between the top and bottom of the container. The 4th item should render on the right side of the page. The 5th item should render on the left side of the page. -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+  flex-flow: row wrap;
+  flex-direction: row-reverse;
+  
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  height: 100px;
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>

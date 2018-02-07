@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Midterm CSS</title>
+    <!-- Part 2 - CSS
+Work through the following problems. Create a separate repository for this section and each heading below will be a separate file in the repository. Then post the URL to the working solution on github as a direct message to Andy. The URL should render the solution when clicking on it.
+
+Two divs by each other
+Create a common layout in html. There should be a left column of text with some navigation links in it that is 200px wide and 500px tall. There is a larger div next to the first one that holds content. It should sit to the right of the first div and should be 800px wide and 500px tall. These items should not be statically positioned but should instead flow next to one another appropriately. In the HTML, the larger div with the content should be typed at the top of the file. The navigation div should be at the bottom of your code. This improves SEO. -->
+    <style type="text/css">
+    #container {
+        display: flex;
+    }
+
+    #div1 {
+        width: 200px;
+        height: 500px;
+        display: flex;
+    }
+
+    #div2 {
+        width: 800px;
+        height: 500px;
+        display: flex;
+        align-items: top;
+    }
+    .content {
+        order: 2;
+    }
+    .links {
+        order: 1;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    div {
+        /*border: 2px solid black;*/
+        padding: 2px;
+    }
+
+    #linkDiv a {
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Two sets of information next to each other</h1>
+    <div id="container">
+        <div id="div2" class="content">
+            <p>Gary is an Executive capable of providing Chief level leadership for any company in any industry. He follows the SWOT mentality for Strategic Planning. <a href="https://www.mindtools.com/pages/article/newTMC_05.htm">SWOT Tools</a>. He is adept at cost containment and profit maximization <a href="https://www.google.com/search?ei=8mAbWuYywZ79BrLAuIAG&q=maximizing+profits&oq=maximizing+profits&gs_l=psy-ab.3..0l7.2539.10178.0.52196.30.26.4.0.0.0.185.2889.5j19.24.0..2..0...1.1.64.psy-ab..2.27.2832...46j0i67k1j0i20i264k1j0i131k1j0i10k1j0i10i46k1j46i10k1j0i46i67k1j46i67k1j0i46k1j33i160k1.0.g4gyK3fWBfA">Profit Maximization</a>. If you would like to learn more about me, you can go to my <a href="https://about.me/garysellergren">About Me Page.</a></p>
+        </div>
+        <div id="linkDiv" class="links">
+            <br>
+            <br>
+            <a href="https://about.me/garysellergren">About Me Page</a>
+            <br>
+            <a href="#">Work Experience</a>
+            <br>
+            <a href="#">Acting Experience</a>
+        </div>
+    </div>
+</body>
+
+</html>
